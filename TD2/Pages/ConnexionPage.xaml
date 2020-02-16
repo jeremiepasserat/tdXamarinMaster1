@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TD2.Pages.ConnexionPage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+
+            <StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
+
+                <Label Text="Votre identifiant"/>
+                <Entry Text="{Binding IdApp}"/>
+
+                <Label Text="Votre Mdp"/>
+                <Entry IsPassword="True" Text="{Binding MdpApp}"/>
+
+                <Button Text="Se connecter" Command="{Binding GoToMainCommand}"/>
+
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:dtos="clr-namespace:TD.Api.Dtos;assembly=TD2"
+             xmlns:td2="clr-namespace:TD2;assembly=TD2"
+             xmlns:essentials="clr-namespace:Xamarin.Essentials;assembly=Xamarin.Essentials"
+             mc:Ignorable="d"
+             x:Class="TD2.Pages.MainPage"
+             Title="{Binding TitreMain}" >
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem  Command="{Binding ChangeUserCommand}"
+                     IconImageSource="engrenageTra.png"
+                     Order="Primary"
+                     Priority="0"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Resources>
+        <td2:ImageConverter x:Key="ImageConverter" />
+    </ContentPage.Resources>
+
+    <RelativeLayout
+        VerticalOptions="FillAndExpand">
+        <ListView
+            RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}"
+            RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+            ItemsSource="{Binding ListeLieux}"
+            SelectedItem="{Binding SelectedLieu, Mode=TwoWay}"
+            HasUnevenRows="True"
+            SeparatorColor="Black"
+            Footer="">
+
+            <ListView.ItemTemplate>
+                <DataTemplate
+                    x:DataType="dtos:PlaceItemSummary">
+                    <ViewCell>
+                        <StackLayout
+                            Margin="6,3"
+                            Orientation="Vertical">
+                            <StackLayout
+                                Orientation="Horizontal">
+                                <Image Source="{Binding Id, Converter={StaticResource ImageConverter}}"></Image>
+                                <Label
+                                    Text="{Binding Title}"
+                                    TextColor="Black"
+                                    FontSize="16" />
+                            </StackLayout>
+                            <Label
+                                Text="{Binding Description}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ImageButton
+            Source="plus.png"
+            Command="{Binding CreateLieuCommand}"
+            BackgroundColor="White"
+            HeightRequest="40"
+            WidthRequest="40"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-60}"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-60}"/>
+
+
+
+
+
+    </RelativeLayout>
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TD2.Pages.InscriptionPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <AbsoluteLayout>
+
+                <StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
+
+                    <Label Text="Votre Prénom"/>
+                    <Entry Text="{Binding PrenomInsc}"/>
+
+                    <Label Text="Votre Nom"/>
+                    <Entry Text="{Binding NomInsc}"/>
+
+                    <Label Text="Votre Email"/>
+                    <Entry Text="{Binding MailInsc}"/>
+
+                    <Label Text="Votre Mdp"/>
+                    <Entry IsPassword="True" Text="{Binding MdpInsc}"/>
+
+                    <Button Text="Envoyer" Command="{Binding GoToConnexionCommand}"/>
+
+
+
+                </StackLayout>
+            </AbsoluteLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

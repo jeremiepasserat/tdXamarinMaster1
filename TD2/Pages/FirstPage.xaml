@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TD2.Pages.FirstPage"
+             Title="TD2">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+
+            <StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
+
+                <Button Text="S'inscrire" Command="{Binding GoToInscriptionCommand}"/>
+
+                <Button Text="Se connecter" Command="{Binding GoToConnectionCommand}"/>
+
+            </StackLayout> 
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

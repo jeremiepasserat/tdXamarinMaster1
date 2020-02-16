@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.arch.lifecycle.runtime\1.1.1.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.arch.lifecycle.viewmodel\1.1.1.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.animated.vector.drawable\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.compat\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.coordinaterlayout\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.design\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.media.compat\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.transition\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.v7.appcompat\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.v7.recyclerview\28.0.0.3\proguard\monoandroid90\proguard.txt" t="Include" />
+    <e p="C:\Microsoft\Xamarin\NuGet\xamarin.android.support.versionedparcelable\28.0.0.3\proguard\monoandroid90" t="Include">
+      <e p="proguard.txt" t="Include" />
+    </e>
+    <e p="C:\Program Files (x86)\Android\android-sdk\platforms\android-28\data\res" t="IncludeRecursive" />
+    <e p="C:\Users\Jérémie\.nuget\packages\xamarin.forms\4.4.0.991640\build\MonoAndroid10" t="Include">
+      <e p="proguard.cfg" t="Include" />
+    </e>
+    <e p="C:\Users\Jérémie\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Jérémie\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_TD2.1874046656.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Public\source\repos\TD2" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="TD2" t="IncludeRecursive">
+        <e p="ApiClient.cs" t="Include" />
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="AssemblyInfo.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="ImageConverter.cs" t="Include" />
+        <e p="Models" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="App.xaml.g.cs" t="Include" />
+              <e p="Pages" t="Include">
+                <e p="ChangeMdp.xaml.g.cs" t="Include" />
+                <e p="ConnexionPage.xaml.g.cs" t="Include" />
+                <e p="FirstPage.xaml.g.cs" t="Include" />
+                <e p="InscriptionPage.xaml.g.cs" t="Include" />
+                <e p="LieuDetailPage.xaml.g.cs" t="Include" />
+                <e p="MainPage.xaml.g.cs" t="Include" />
+                <e p="Page1.xaml.g.cs" t="Include" />
+                <e p="UserDetailPage.xaml.g.cs" t="Include" />
+              </e>
+              <e p="TD2.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Pages" t="Include">
+          <e p="CartePage.xaml" t="Include" />
+          <e p="CartePage.xaml.cs" t="Include" />
+          <e p="ChangeMdp.xaml" t="Include" />
+          <e p="ChangeMdp.xaml.cs" t="Include" />
+          <e p="ConnexionPage.xaml" t="Include" />
+          <e p="ConnexionPage.xaml.cs" t="Include" />
+          <e p="FirstPage.xaml" t="Include" />
+          <e p="FirstPage.xaml.cs" t="Include" />
+          <e p="InscriptionPage.xaml" t="Include" />
+          <e p="InscriptionPage.xaml.cs" t="Include" />
+          <e p="LieuDetailPage.xaml" t="Include" />
+          <e p="LieuDetailPage.xaml.cs" t="Include" />
+          <e p="MainPage.xaml" t="Include" />
+          <e p="MainPage.xaml.cs" t="Include" />
+          <e p="UserDetailPage.xaml" t="Include" />
+          <e p="UserDetailPage.xaml.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="CommentItem.cs" t="Include" />
+          <e p="CreateCommentRequest.cs" t="Include" />
+          <e p="CreatePlaceRequest.cs" t="Include" />
+          <e p="ImageItem.cs" t="Include" />
+          <e p="LoginRequest.cs" t="Include" />
+          <e p="LoginResult.cs" t="Include" />
+          <e p="PlaceItem.cs" t="Include" />
+          <e p="PlaceItemSummary.cs" t="Include" />
+          <e p="RefreshRequest.cs" t="Include" />
+          <e p="RegisterRequest.cs" t="Include" />
+          <e p="Response.cs" t="Include" />
+          <e p="UpdatePasswordRequest.cs" t="Include" />
+          <e p="UpdateProfileRequest.cs" t="Include" />
+          <e p="UserItem.cs" t="Include" />
+        </e>
+        <e p="Services" t="Include" />
+        <e p="TD2.csproj" t="IncludeRecursive" />
+        <e p="ViewModels" t="Include">
+          <e p="ChangeMdpViewModel.cs" t="Include" />
+          <e p="ConnexionViewModel.cs" t="Include" />
+          <e p="FirstPageViewModel.cs" t="Include" />
+          <e p="InscriptionViewModel.cs" t="Include" />
+          <e p="LieuDetailViewModel.cs" t="Include" />
+          <e p="MainPageViewModel.cs" t="Include" />
+          <e p="UserDetailViewModel.cs" t="Include" />
+        </e>
+      </e>
+      <e p="TD2.Android" t="IncludeRecursive">
+        <e p="Assets" t="Include">
+          <e p="AboutAssets.txt" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MainActivity.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="90" t="Include">
+              <e p="designtime" t="Include">
+                <e p="Resource.designer.cs" t="Include" />
+              </e>
+              <e p="XbdMerge" t="Include">
+                <e p="proguard" t="Include">
+                  <e p="dc663e480.txt" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Properties" t="Include">
+          <e p="AndroidManifest.xml" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="AboutResources.txt" t="Include" />
+          <e p="drawable" t="Include">
+            <e p="engrenage.jfif" t="Include" />
+            <e p="engrenage.png" t="Include" />
+            <e p="engrenageTra.png" t="Include" />
+            <e p="loupe.png" t="Include" />
+            <e p="plus.png" t="Include" />
+          </e>
+          <e p="layout" t="Include">
+            <e p="Tabbar.xml" t="Include" />
+            <e p="Toolbar.xml" t="Include" />
+          </e>
+          <e p="mipmap-anydpi-v26" t="Include">
+            <e p="icon.xml" t="Include" />
+            <e p="icon_round.xml" t="Include" />
+          </e>
+          <e p="mipmap-hdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-mdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-xhdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-xxhdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="mipmap-xxxhdpi" t="Include">
+            <e p="icon.png" t="Include" />
+            <e p="launcher_foreground.png" t="Include" />
+          </e>
+          <e p="values" t="Include">
+            <e p="colors.xml" t="Include" />
+            <e p="styles.xml" t="Include" />
+          </e>
+        </e>
+        <e p="TD2.Android.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="TD2.iOS" t="IncludeRecursive">
+        <e p="AppDelegate.cs" t="Include" />
+        <e p="Assets.xcassets" t="Include">
+          <e p="AppIcon.appiconset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Icon1024.png" t="Include" />
+            <e p="Icon120.png" t="Include" />
+            <e p="Icon152.png" t="Include" />
+            <e p="Icon167.png" t="Include" />
+            <e p="Icon180.png" t="Include" />
+            <e p="Icon20.png" t="Include" />
+            <e p="Icon29.png" t="Include" />
+            <e p="Icon40.png" t="Include" />
+            <e p="Icon58.png" t="Include" />
+            <e p="Icon60.png" t="Include" />
+            <e p="Icon76.png" t="Include" />
+            <e p="Icon80.png" t="Include" />
+            <e p="Icon87.png" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Entitlements.plist" t="Include" />
+        <e p="Info.plist" t="Include" />
+        <e p="Main.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="LaunchScreen.storyboard" t="Include" />
+        </e>
+        <e p="TD2.iOS.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="TD2.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
