@@ -10,7 +10,7 @@ namespace TD2
         {
             int imageSource =(int)  value;
 
-            return "https://td-api.julienmialon.com/images/" + imageSource;
+            return (string)Application.Current.Resources["Url"] + (string)Application.Current.Resources["Images"] + "/" + imageSource;
 
         }
 

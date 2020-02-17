@@ -72,7 +72,7 @@
                                             FontSize="16" />
                                     </StackLayout>
                                     <Label
-                                        Text="{Binding Author}" />
+                                        Text="{Binding Author.FirstName}" />
                                     <Label
                                         Text="{Binding Text}" />
                                     

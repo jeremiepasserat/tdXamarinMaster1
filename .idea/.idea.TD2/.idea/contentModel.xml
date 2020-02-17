@@ -66,6 +66,8 @@
           <e p="LieuDetailPage.xaml.cs" t="Include" />
           <e p="MainPage.xaml" t="Include" />
           <e p="MainPage.xaml.cs" t="Include" />
+          <e p="NewCommentPage.xaml" t="Include" />
+          <e p="NewCommentPage.xaml.cs" t="Include" />
           <e p="UserDetailPage.xaml" t="Include" />
           <e p="UserDetailPage.xaml.cs" t="Include" />
         </e>
@@ -94,6 +96,7 @@
           <e p="InscriptionViewModel.cs" t="Include" />
           <e p="LieuDetailViewModel.cs" t="Include" />
           <e p="MainPageViewModel.cs" t="Include" />
+          <e p="NewCommentViewModel.cs" t="Include" />
           <e p="UserDetailViewModel.cs" t="Include" />
         </e>
       </e>

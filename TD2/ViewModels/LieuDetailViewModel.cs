@@ -5,6 +5,7 @@ using Xamarin.Forms;
 
 using TD2.Pages;
 using System.Net.Http;
+using System.Threading.Tasks;
 using Common.Api.Dtos;
 using Newtonsoft.Json;
 using TD.Api.Dtos;
@@ -23,6 +24,8 @@ namespace TD2.ViewModels
 
         public ICommand GoToMapCommand { get; }
 
+        public ICommand AddCommentCommand { get; }
+        
         public PlaceItemSummary Place
         {
             get => _place;
@@ -41,10 +44,16 @@ namespace TD2.ViewModels
             _accessToken = loginResultAccessToken;
             
             GoToMapCommand = new Command(ChargerLieuSurCarte);
+            AddCommentCommand = new Command(AjouterUnCommentaire);
 
             chargerDetailLieu();
 
             //throw new NotImplementedException();
+        }
+
+        private async void AjouterUnCommentaire()
+        {
+            await NavigationService.PushAsync(new NewCommentPage(_accessToken, _place.Id));
         }
 
         private async void chargerDetailLieu()
@@ -59,7 +68,6 @@ namespace TD2.ViewModels
                 resp = await _api.ReadFromResponse<Response<PlaceItem>>(reponse);
 
                 PlaceDetail = resp.Data;
-             
             }
            
             else
@@ -67,10 +75,8 @@ namespace TD2.ViewModels
                 System.Diagnostics.Debug.WriteLine("Problème dans la requête de connexion : " + resp.ErrorMessage);
             }
             
-            
-            
         }
-
+        
         public async void ChargerLieuSurCarte()
         {
 
