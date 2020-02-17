@@ -20,3 +20,4 @@ C:\Users\Public\source\repos\TD2\TD2\obj\Debug\netstandard2.0\Pages\CartePage.xa
 C:\Users\Public\source\repos\TD2\TD2\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Public\source\repos\TD2\TD2\obj\Debug\netstandard2.0\Pages\AjoutLieuPage.xaml.g.cs
 C:\Users\Public\source\repos\TD2\TD2\obj\Debug\netstandard2.0\Pages\NewCommentPage.xaml.g.cs
+C:\Users\Public\source\repos\TD2\TD2\obj\Debug\netstandard2.0\Pages\AjoutPhotoPage.xaml.g.cs

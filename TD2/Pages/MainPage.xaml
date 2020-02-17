@@ -41,14 +41,14 @@
                             Orientation="Vertical">
                             <StackLayout
                                 Orientation="Horizontal">
-                                <Image Source="{Binding Id, Converter={StaticResource ImageConverter}}"></Image>
+                                <Image HeightRequest="100" WidthRequest="100" MinimumHeightRequest="100" MinimumWidthRequest="100" Source="{Binding Id, Converter={StaticResource ImageConverter}}"></Image>
                                 <Label
                                     Text="{Binding Title}"
                                     TextColor="Black"
                                     FontSize="16" />
                             </StackLayout>
                             <Label
-                                Text="{Binding Description}" />
+                                Text="{Binding Description}"  MaxLines="2"/>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

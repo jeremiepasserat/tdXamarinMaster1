@@ -52,6 +52,8 @@
         <e p="Pages" t="Include">
           <e p="AjoutLieuPage.xaml" t="Include" />
           <e p="AjoutLieuPage.xaml.cs" t="Include" />
+          <e p="AjoutPhotoPage.xaml" t="Include" />
+          <e p="AjoutPhotoPage.xaml.cs" t="Include" />
           <e p="CartePage.xaml" t="Include" />
           <e p="CartePage.xaml.cs" t="Include" />
           <e p="ChangeMdp.xaml" t="Include" />
@@ -90,6 +92,7 @@
         <e p="Services" t="Include" />
         <e p="TD2.csproj" t="IncludeRecursive" />
         <e p="ViewModels" t="Include">
+          <e p="AjoutPhotoViewModel.cs" t="Include" />
           <e p="ChangeMdpViewModel.cs" t="Include" />
           <e p="ConnexionViewModel.cs" t="Include" />
           <e p="FirstPageViewModel.cs" t="Include" />

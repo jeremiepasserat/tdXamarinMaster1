@@ -158,10 +158,9 @@ namespace TD2.ViewModels
         
         public async void CreateNewLieu()
         {
-            await NavigationService.PushAsync(new AjoutLieuPage());
+            await NavigationService.PushAsync(new AjoutPhotoPage());
 
             // fonctions de création de lieu
-            System.Diagnostics.Debug.WriteLine("Callam Chambers");
         }
         
         public async void DetailUser()
