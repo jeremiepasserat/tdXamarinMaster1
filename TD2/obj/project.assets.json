@@ -61,7 +61,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
-      "Plugin.Permissions/3.0.0.12": {
+      "Plugin.Permissions/5.0.0-beta": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Plugin.Permissions.dll": {}
@@ -446,25 +446,33 @@
         "packageIcon.png"
       ]
     },
-    "Plugin.Permissions/3.0.0.12": {
-      "sha512": "VrYqI/ufk3bH6gTP1JJlLByjhS0CHu3riKmdozhX9/qXA9hlvLolmcqKJdyAqpzmrVC74m3ZtirUBIrBxvT1Lw==",
+    "Plugin.Permissions/5.0.0-beta": {
+      "sha512": "Y82iRNblpHbVGIPyyd5fH857IkTY/Mes0TWISg6HuT69OOgSYeUPHJtue8Fpx6GtsH857OHt465aJRWDWL7clg==",
       "type": "package",
-      "path": "plugin.permissions/3.0.0.12",
+      "path": "plugin.permissions/5.0.0-beta",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "lib/monoandroid70/Plugin.Permissions.dll",
+        "lib/monoandroid70/Plugin.Permissions.pdb",
         "lib/monoandroid71/Plugin.Permissions.dll",
-        "lib/monoandroid71/Plugin.Permissions.xml",
+        "lib/monoandroid71/Plugin.Permissions.pdb",
+        "lib/monoandroid80/Plugin.Permissions.dll",
+        "lib/monoandroid80/Plugin.Permissions.pdb",
+        "lib/monoandroid81/Plugin.Permissions.dll",
+        "lib/monoandroid81/Plugin.Permissions.pdb",
+        "lib/monoandroid90/Plugin.Permissions.dll",
+        "lib/monoandroid90/Plugin.Permissions.pdb",
         "lib/netstandard1.0/Plugin.Permissions.dll",
-        "lib/netstandard1.0/Plugin.Permissions.xml",
+        "lib/netstandard1.0/Plugin.Permissions.pdb",
         "lib/netstandard2.0/Plugin.Permissions.dll",
-        "lib/netstandard2.0/Plugin.Permissions.xml",
-        "lib/uap10.0.10240/Plugin.Permissions.dll",
-        "lib/uap10.0.10240/Plugin.Permissions.pri",
-        "lib/uap10.0.10240/Plugin.Permissions.xml",
+        "lib/netstandard2.0/Plugin.Permissions.pdb",
+        "lib/uap10.0.16299/Plugin.Permissions.dll",
+        "lib/uap10.0.16299/Plugin.Permissions.pdb",
+        "lib/uap10.0.16299/Plugin.Permissions.pri",
         "lib/xamarinios10/Plugin.Permissions.dll",
-        "lib/xamarinios10/Plugin.Permissions.xml",
-        "plugin.permissions.3.0.0.12.nupkg.sha512",
+        "lib/xamarinios10/Plugin.Permissions.pdb",
+        "plugin.permissions.5.0.0-beta.nupkg.sha512",
         "plugin.permissions.nuspec",
         "readme.txt"
       ]
@@ -983,6 +991,7 @@
       "MonkeyCache.SQLite >= 1.3.0",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 12.0.3",
+      "Plugin.Permissions >= 5.0.0-beta",
       "Storm.Mvvm.Forms >= 2.2.0",
       "Xam.Plugin.Media >= 4.0.1.5",
       "Xamarin.Essentials >= 1.3.1",
@@ -1045,6 +1054,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.3, )"
+          },
+          "Plugin.Permissions": {
+            "target": "Package",
+            "version": "[5.0.0-beta, )"
           },
           "Storm.Mvvm.Forms": {
             "target": "Package",

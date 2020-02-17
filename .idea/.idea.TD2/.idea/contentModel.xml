@@ -36,6 +36,7 @@
               <e p="App.xaml.g.cs" t="Include" />
               <e p="Pages" t="Include">
                 <e p="AjoutLieuPage.xaml.g.cs" t="Include" />
+                <e p="AjoutPhotoPage.xaml.g.cs" t="Include" />
                 <e p="CartePage.xaml.g.cs" t="Include" />
                 <e p="ChangeMdp.xaml.g.cs" t="Include" />
                 <e p="ConnexionPage.xaml.g.cs" t="Include" />
@@ -43,6 +44,7 @@
                 <e p="InscriptionPage.xaml.g.cs" t="Include" />
                 <e p="LieuDetailPage.xaml.g.cs" t="Include" />
                 <e p="MainPage.xaml.g.cs" t="Include" />
+                <e p="NewCommentPage.xaml.g.cs" t="Include" />
                 <e p="UserDetailPage.xaml.g.cs" t="Include" />
               </e>
               <e p="TD2.AssemblyInfo.cs" t="Include" />
@@ -92,6 +94,7 @@
         <e p="Services" t="Include" />
         <e p="TD2.csproj" t="IncludeRecursive" />
         <e p="ViewModels" t="Include">
+          <e p="AjoutLieuViewModel.cs" t="Include" />
           <e p="AjoutPhotoViewModel.cs" t="Include" />
           <e p="ChangeMdpViewModel.cs" t="Include" />
           <e p="ConnexionViewModel.cs" t="Include" />

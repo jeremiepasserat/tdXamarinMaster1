@@ -50,6 +50,10 @@
               "target": "Package",
               "version": "[12.0.3, )"
             },
+            "Plugin.Permissions": {
+              "target": "Package",
+              "version": "[5.0.0-beta, )"
+            },
             "Storm.Mvvm.Forms": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -136,6 +140,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
+            },
+            "Plugin.Permissions": {
+              "target": "Package",
+              "version": "[5.0.0-beta, )"
             },
             "Storm.Mvvm.Forms": {
               "target": "Package",

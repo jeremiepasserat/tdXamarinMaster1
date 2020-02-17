@@ -14,6 +14,9 @@ namespace TD2.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            
+            Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, Bundle.Empty);
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 

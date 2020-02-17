@@ -5,10 +5,19 @@
              x:Class="TD2.Pages.AjoutLieuPage"
              Title="Ajout Nouveau Lieu">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Vue permettant l'ajout d'un nouveau lieu (en cours de réalisation)"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <AbsoluteLayout>
+
+            <StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
+
+                <Label Text="Votre identifiant"/>
+                <Entry Text="{Binding IdApp}"/>
+
+                <Label Text="Votre Mdp"/>
+                <Entry IsPassword="True" Text="{Binding MdpApp}"/>
+
+                <Button Text="Publier la photo" Command="{Binding GoToMainCommand}"/>
+
+            </StackLayout>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

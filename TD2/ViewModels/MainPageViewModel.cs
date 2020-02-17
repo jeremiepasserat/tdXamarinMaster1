@@ -158,7 +158,7 @@ namespace TD2.ViewModels
         
         public async void CreateNewLieu()
         {
-            await NavigationService.PushAsync(new AjoutPhotoPage());
+            await NavigationService.PushAsync(new AjoutPhotoPage(_loginResult.AccessToken));
 
             // fonctions de création de lieu
         }
