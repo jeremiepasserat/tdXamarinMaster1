@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.td2">
     <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28" />
-    <application android:label="TD2.Android"></application>
+    <application android:label="TD2.Android">
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyA1sDF6BGsfiU53RG7kuMMienWys6cj7qk"/>
+    </application>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
 </manifest>

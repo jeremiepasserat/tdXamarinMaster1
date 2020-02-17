@@ -15,7 +15,8 @@
           "Storm.Mvvm.Forms": "2.2.0",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.4.0.991640"
+          "Xamarin.Forms": "4.4.0.991640",
+          "Xamarin.Forms.Maps": "4.4.0.991640"
         },
         "runtime": {
           "TD2.dll": {}
@@ -162,6 +163,17 @@
             "fileVersion": "4.4.0.471"
           }
         }
+      },
+      "Xamarin.Forms.Maps/4.4.0.991640": {
+        "dependencies": {
+          "Xamarin.Forms": "4.4.0.991640"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.Maps.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "4.4.0.471"
+          }
+        }
       }
     }
   },
@@ -268,6 +280,13 @@
       "sha512": "sha512-668BMe9e5uvQW+caDebKn3nZr1Msxc4YMpDhD/dN061h+bHYEoWu1c/gdmQnwhGpeHMP4TClPxCKRP41FFsGCQ==",
       "path": "xamarin.forms/4.4.0.991640",
       "hashPath": "xamarin.forms.4.4.0.991640.nupkg.sha512"
+    },
+    "Xamarin.Forms.Maps/4.4.0.991640": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SENW/TyU/B0dMN0+vhIAhJ6guL1MTF4vv6FWloQMkFAuOHuIv8658nGOE/K4r5kRQWL1ZREx7PHQlnrB+0fEFA==",
+      "path": "xamarin.forms.maps/4.4.0.991640",
+      "hashPath": "xamarin.forms.maps.4.4.0.991640.nupkg.sha512"
     }
   }
 }

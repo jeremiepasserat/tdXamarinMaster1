@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="TD2.Pages.ConnexionPage">
+             x:Class="TD2.Pages.ConnexionPage"
+             Title="Connexion">
     <ContentPage.Content>
         <AbsoluteLayout>
 

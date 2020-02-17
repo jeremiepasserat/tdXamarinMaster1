@@ -86,6 +86,8 @@
     <AndroidResource Include="Resources\drawable\engrenage.png" />
     <AndroidResource Include="Resources\drawable\engrenageTra.png" />
     <AndroidResource Include="Resources\drawable\loupe.png" />
+    <AndroidResource Include="Resources\drawable\map2.png" />
+    <AndroidResource Include="Resources\drawable\map.png" />
     <AndroidResource Include="Resources\drawable\plus.png" />
     <AndroidResource Include="Resources\layout\Tabbar.xml" />
     <AndroidResource Include="Resources\layout\Toolbar.xml" />

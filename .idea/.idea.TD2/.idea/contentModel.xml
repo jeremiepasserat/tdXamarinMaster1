@@ -35,13 +35,14 @@
             <e p="netstandard2.0" t="Include">
               <e p="App.xaml.g.cs" t="Include" />
               <e p="Pages" t="Include">
+                <e p="AjoutLieuPage.xaml.g.cs" t="Include" />
+                <e p="CartePage.xaml.g.cs" t="Include" />
                 <e p="ChangeMdp.xaml.g.cs" t="Include" />
                 <e p="ConnexionPage.xaml.g.cs" t="Include" />
                 <e p="FirstPage.xaml.g.cs" t="Include" />
                 <e p="InscriptionPage.xaml.g.cs" t="Include" />
                 <e p="LieuDetailPage.xaml.g.cs" t="Include" />
                 <e p="MainPage.xaml.g.cs" t="Include" />
-                <e p="Page1.xaml.g.cs" t="Include" />
                 <e p="UserDetailPage.xaml.g.cs" t="Include" />
               </e>
               <e p="TD2.AssemblyInfo.cs" t="Include" />
@@ -49,6 +50,8 @@
           </e>
         </e>
         <e p="Pages" t="Include">
+          <e p="AjoutLieuPage.xaml" t="Include" />
+          <e p="AjoutLieuPage.xaml.cs" t="Include" />
           <e p="CartePage.xaml" t="Include" />
           <e p="CartePage.xaml.cs" t="Include" />
           <e p="ChangeMdp.xaml" t="Include" />
@@ -125,6 +128,8 @@
             <e p="engrenage.png" t="Include" />
             <e p="engrenageTra.png" t="Include" />
             <e p="loupe.png" t="Include" />
+            <e p="map.png" t="Include" />
+            <e p="map2.png" t="Include" />
             <e p="plus.png" t="Include" />
           </e>
           <e p="layout" t="Include">

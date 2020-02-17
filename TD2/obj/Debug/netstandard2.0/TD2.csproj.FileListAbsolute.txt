@@ -16,4 +16,6 @@ C:\Users\public\source\repos\TD2\TD2\obj\Debug\netstandard2.0\TD2.csprojAssembly
 C:\Users\Public\source\repos\TD2\TD2\obj\Debug\netstandard2.0\Pages\LieuDetailPage.xaml.g.cs
 C:\Users\Public\source\repos\TD2\TD2\obj\Debug\netstandard2.0\Pages\UserDetailPage.xaml.g.cs
 C:\Users\Public\source\repos\TD2\TD2\obj\Debug\netstandard2.0\Pages\ChangeMdp.xaml.g.cs
-C:\Users\public\source\repos\TD2\TD2\obj\Debug\netstandard2.0\Pages\Page1.xaml.g.cs
+C:\Users\Public\source\repos\TD2\TD2\obj\Debug\netstandard2.0\Pages\CartePage.xaml.g.cs
+C:\Users\Public\source\repos\TD2\TD2\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Public\source\repos\TD2\TD2\obj\Debug\netstandard2.0\Pages\AjoutLieuPage.xaml.g.cs

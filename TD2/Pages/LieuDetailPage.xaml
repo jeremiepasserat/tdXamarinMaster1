@@ -3,7 +3,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:td2="clr-namespace:TD2;assembly=TD2"
+             xmlns:dtos="clr-namespace:TD.Api.Dtos;assembly=TD2"
              x:Class="TD2.Pages.LieuDetailPage">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem  Command="{Binding GoToMapCommand}"
+                      IconImageSource="map2.png"
+                      Order="Primary"
+                      Priority="0"/>
+        <ToolbarItem  Command="{Binding AddCommentCommand}"
+                      IconImageSource="plus.png"
+                      Order="Primary"
+                      Priority="0"/>
+     <!--   <ToolbarItem  Command="{Binding ChangeUserCommand}"
+                      IconImageSource="plus.png"
+                      Order="Secondary" Text="Ajouter commentaire"
+                      Priority="0"/>
+        <ToolbarItem  Command="{Binding ChangeUserCommand}"
+                      IconImageSource="plus.png"
+                      Order="Secondary" Text="Voir sur la carte"
+                      Priority="0"/> -->
+    </ContentPage.ToolbarItems>
     
     
     
@@ -13,12 +33,73 @@
     
     
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
             <Image Source="{Binding Place.Id, Converter={StaticResource ImageConverter}}"></Image>
             
             <Label Text="{Binding Place.Title}"
                    VerticalOptions="CenterAndExpand"
                    HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+            
+            <Label Text="{Binding Place.Description}"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+            
+            <Label Text="Commentaires"></Label>
+             
+            <RelativeLayout
+                VerticalOptions="Fill">
+               <ListView
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}"
+                    RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                    ItemsSource="{Binding PlaceDetail.Comments}"
+                    HasUnevenRows="True"
+                    SeparatorColor="Black"
+                    Footer="">
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate
+                            x:DataType="dtos:CommentItem">
+                            <ViewCell>
+                                <StackLayout
+                                    Margin="6,3"
+                                    Orientation="Vertical">
+                                    <StackLayout
+                                        Orientation="Horizontal">
+                                        <Label
+                                            Text="{Binding Date}"
+                                            TextColor="Black"
+                                            FontSize="16" />
+                                    </StackLayout>
+                                    <Label
+                                        Text="{Binding Author}" />
+                                    <Label
+                                        Text="{Binding Text}" />
+                                    
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+
+               <!-- <ImageButton
+                    Source="plus.png"
+                    Command="{Binding CreateLieuCommand}"
+                    BackgroundColor="White"
+                    HeightRequest="40"
+                    WidthRequest="40"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-60}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-60}"/>
+-->
+
+
+
+            </RelativeLayout>
+            
+            
+            
+          <!--  <Button Text="Voir le lieu sur une carte" Command="{Binding GoToMapCommand}"></Button> -->
+        </StackLayout></ScrollView>
     </ContentPage.Content>
 </ContentPage>

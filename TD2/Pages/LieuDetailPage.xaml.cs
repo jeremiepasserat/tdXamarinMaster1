@@ -16,6 +16,7 @@ namespace TD2.Pages
         public LieuDetailPage(PlaceItemSummary lieuChoisi, string loginResultAccessToken)
         {
             InitializeComponent();
+            Title = lieuChoisi.Title;
             BindingContext = new LieuDetailViewModel(lieuChoisi, loginResultAccessToken);
         }
     }
