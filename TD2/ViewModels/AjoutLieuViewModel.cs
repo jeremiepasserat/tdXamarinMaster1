@@ -115,6 +115,14 @@ namespace TD2.ViewModels
          
             System.Diagnostics.Debug.WriteLine("Response " + reponse);
 
+            if (reponse.IsSuccessStatusCode)
+            {
+                // On revient sur la page principale
+                await NavigationService.PopAsync();
+                await NavigationService.PopAsync();
+
+            }
+
             // LoginResult loginResult = new LoginResult();
             // Response<LoginResult> resp = new Response<LoginResult>();
 

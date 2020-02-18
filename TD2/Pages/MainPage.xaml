@@ -46,6 +46,8 @@
                                     Text="{Binding Title}"
                                     TextColor="Black"
                                     FontSize="16" />
+                                <Label
+                                    Text="{Binding ImageId}"/>
                             </StackLayout>
                             <Label
                                 Text="{Binding Description}"  MaxLines="2"/>

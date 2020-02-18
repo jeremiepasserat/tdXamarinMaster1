@@ -22,7 +22,7 @@ namespace TD2.ViewModels
         
        // public ICommand  LoadOnePlaceCommand { get; }
        
-       private String _titreMain;
+        private String _titreMain;
         private UserItem _userItem = new UserItem();
         private ApiClient _api = new ApiClient();
         private LoginResult _loginResult;
