@@ -173,6 +173,9 @@
             <e p="colors.xml" t="Include" />
             <e p="styles.xml" t="Include" />
           </e>
+          <e p="xml" t="Include">
+            <e p="file_paths.xml" t="Include" />
+          </e>
         </e>
         <e p="TD2.Android.csproj" t="IncludeRecursive" />
       </e>

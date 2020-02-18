@@ -8,6 +8,8 @@
 
             <StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
 
+                <Image Source="{Binding ImageChoisie}" HeightRequest="50" WidthRequest="50" MinimumHeightRequest="50" MinimumWidthRequest="50"/>
+                
                 <Label Text="Etape 1 : Choisir la photo du lieu"/>
 
                 <Button Text="Choisir dans votre Gallerie" Command="{Binding GalleryCommand}"/>

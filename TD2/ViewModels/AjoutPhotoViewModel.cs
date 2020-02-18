@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Windows.Input;
+using Plugin.Media;
 using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
 using Storm.Mvvm;
@@ -20,6 +21,16 @@ namespace TD2.ViewModels
 
 
         private string _nomPhotoUpload;
+
+        private ImageSource _imageChoisie;
+
+        private bool _isImageLoad = false;
+
+        public ImageSource ImageChoisie
+        {
+            get => _imageChoisie;
+            set => SetProperty(ref _imageChoisie, value);
+        }
 
         public string NomPhotoUpload
         {
@@ -49,24 +60,42 @@ namespace TD2.ViewModels
         {
 
             var photo = await Plugin.Media.CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions() { });
-
             
-            System.Diagnostics.Debug.WriteLine("Image Nom : " + photo);
-
             if (photo != null)
             {
-                ImageSource image = ImageSource.FromStream(() => photo.GetStream());
+                ImageChoisie = ImageSource.FromStream(() => photo.GetStream());
+                System.Diagnostics.Debug.WriteLine("Image Nom : " + _imageChoisie);
                 
-
             }
         }
 
-        private void chargerPhotoGallerie()
+        private async void chargerPhotoGallerie()
         {
-            System.Diagnostics.Debug.WriteLine("Je veux choisir une photo existante");
+            
+            if (!CrossMedia.Current.IsPickPhotoSupported)
+            {
+                System.Diagnostics.Debug.WriteLine("Je veux choisir une photo existante");
+                return;
+            }
+
+            var file = await CrossMedia.Current.PickPhotoAsync();
+            if (file == null)
+                return;
+
+            ImageChoisie = ImageSource.FromStream(() => file.GetStream());
+            System.Diagnostics.Debug.WriteLine("photo photo : " + _imageChoisie.AutomationId);
+
+            loadImageIntoApi();
+
+
             //throw new System.NotImplementedException();
         }
-        
+
+        private void loadImageIntoApi()
+        {
+            //throw new NotImplementedException();
+        }
+
         /*public byte[] ImageSourceToBytes(BitmapEncoder encoder, ImageSource imageSource)
         {
             byte[] bytes = null;
