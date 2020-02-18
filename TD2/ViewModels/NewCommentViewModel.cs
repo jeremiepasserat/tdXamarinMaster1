@@ -22,7 +22,7 @@ namespace TD2.ViewModels
 
         private string _commentText;
 
-        private UserItem _user;
+        //private UserItem _user;
 
         public string CommentText
         {

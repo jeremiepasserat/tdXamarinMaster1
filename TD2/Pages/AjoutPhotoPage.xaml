@@ -16,9 +16,9 @@
                 
                 <Button Text="Prendre une nouvelle photo" Command="{Binding CameraCommand}"/>
                 
-                <Label Text="{Binding NomPhotoUpload}"></Label>
+                <!--    <Label Text="{Binding NomPhotoUpload}"></Label>
                 
-                <Button Text="Continuer " Command="{Binding NewLieuCommand}"/>
+              <Button Text="Continuer " Command="{Binding NewLieuCommand}"/> -->
 
 
             </StackLayout>

@@ -28,6 +28,7 @@
         <e p="App.xaml.cs" t="Include" />
         <e p="AssemblyInfo.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="BooleanConverter.cs" t="Include" />
         <e p="ImageConverter.cs" t="Include" />
         <e p="Models" t="Include" />
         <e p="obj" t="ExcludeRecursive">

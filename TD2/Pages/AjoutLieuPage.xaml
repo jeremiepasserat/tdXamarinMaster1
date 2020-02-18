@@ -2,20 +2,35 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:td2="clr-namespace:TD2;assembly=TD2"
              x:Class="TD2.Pages.AjoutLieuPage"
              Title="Ajout Nouveau Lieu">
+    
+    <ContentPage.Resources>
+        <td2:NegateBooleanConverter x:Key="BooleanConverter" />
+    </ContentPage.Resources>
     <ContentPage.Content>
         <AbsoluteLayout>
 
             <StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
 
-                <Label Text="Votre identifiant"/>
-                <Entry Text="{Binding IdApp}"/>
+                <Label Text="Titre : "/>
+                <Entry Text="{Binding TitreLieu}"/>
+                
+                <Label Text="Description : "/>
+                <Editor Text="{Binding DescriptionLieu}" VerticalOptions="FillAndExpand" Keyboard="Chat"/> 
+                
+                <StackLayout Orientation="Horizontal">
+                    <CheckBox VerticalOptions="Center" IsChecked="{Binding UseGps, Mode=TwoWay}" />
+                    <Label VerticalTextAlignment="Center" Text="Utiliser les Coordonnees GPS du telephone"></Label>
+                </StackLayout>
+                <Label IsVisible="{Binding UseGps, Converter={StaticResource BooleanConverter}}"  Text="Latitude : "/>
+                <Entry IsVisible="{Binding UseGps, Converter={StaticResource BooleanConverter}}" Text="{Binding LatitudeLieu}"/>
 
-                <Label Text="Votre Mdp"/>
-                <Entry IsPassword="True" Text="{Binding MdpApp}"/>
+                <Label IsVisible="{Binding UseGps, Converter={StaticResource BooleanConverter}}" Text="Longitude : "/>
+                <Editor IsVisible="{Binding UseGps, Converter={StaticResource BooleanConverter}}" Text="{Binding LongitudeLieu}" VerticalOptions="FillAndExpand" Keyboard="Chat"/>
 
-                <Button Text="Publier la photo" Command="{Binding GoToMainCommand}"/>
+                <Button Text="Publier la photo" Command="{Binding PublishCommand}"/>
 
             </StackLayout>
         </AbsoluteLayout>
